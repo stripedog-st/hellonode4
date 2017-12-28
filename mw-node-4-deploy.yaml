@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: mw-node4-deploy
+  name: mw-node-4-deploy
   namespace: madwater-rd
 spec:
   replicas: 1
@@ -11,8 +11,8 @@ spec:
         app: node
     spec:
       containers:
-      - name: mw-node4-container
-        image: mw-node4:v1
+      - name: mw-node-4
+        image: mw-node-4:v1
         imagePullPolicy: Never
         ports:
         - containerPort: 8072
