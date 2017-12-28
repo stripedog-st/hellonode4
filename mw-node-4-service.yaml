@@ -9,7 +9,7 @@ spec:
       port: 8072
       targetPort: 8072
     selector:
-        app: node
+        app: node4
     type: NodePort
     sessionAffinity: None
     externalTrafficPolicy: Cluster
