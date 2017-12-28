@@ -1,13 +1,13 @@
 kind: Service
 apiVersion: v1
 metadata:
-    name: mw-node1-service
+    name: mw-node-4-service
     namespace: madwater-rd
 spec:
     ports:
     - protocol: TCP
-      port: 8091
-      targetPort: 8091
+      port: 8072
+      targetPort: 8072
     selector:
         app: node
     type: NodePort
