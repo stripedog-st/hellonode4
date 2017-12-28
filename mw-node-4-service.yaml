@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata:
+    name: mw-node1-service
+    namespace: madwater-rd
+spec:
+    ports:
+    - protocol: TCP
+      port: 8091
+      targetPort: 8091
+    selector:
+        app: node
+    type: NodePort
+    sessionAffinity: None
+    externalTrafficPolicy: Cluster
